@@ -11,5 +11,9 @@ Name: Alhanouf Azaz Alsulami ID: 2112617
 
 Name: Rola Salman Al-Lahibi  ID: 2116091
 
+<<<<<<< HEAD
 Name: Bushra Turki Alzhrani  ID: 1806542
 
+=======
+Name: Bushra Turki ALzhrani  ID: 1806542 
+>>>>>>> 4c7fd9fc6ae0db1824af78d185288c0b3fc7e0fc
