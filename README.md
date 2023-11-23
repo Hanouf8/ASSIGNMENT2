@@ -10,7 +10,7 @@ Issues Fixed:added more break statments to break out the nested loop and fixed t
   Issues Fixed:added comments to improve readability and correct the mismatch constructor with the class name
 
 Name: Rola Salman Al-Lahibi ID: 2116091
-
+Issues Fixed: Print the stack trace for exceptions to provide more detailed error information
 
 Name: Bushra Turki Alzhrani ID: 1806542
 
