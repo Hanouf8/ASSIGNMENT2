@@ -1,6 +1,3 @@
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-
 public class SensorDataProcessor {
     // Sensor data and limits.
     public double[][][] data;
@@ -38,6 +35,9 @@ public class SensorDataProcessor {
                         // Calculate data based on certain conditions.                        
                         data2[i][j][k] = data[i][j][k] / d - Math.pow(limit[i][j], 2.0);
 
+                        // Calculate data based on certain conditions.
+                        data2[i][j][k] = data[i][j][k] / d - Math.pow(limit[i][j], 2.0);
+                        
                         // Check conditions for further processing.
                         if (average(data2[i][j]) > 10 && average(data2[i][j]) < 50)
                             break;
@@ -54,6 +54,7 @@ public class SensorDataProcessor {
                 }
                 if (j < data[0].length)
                     break;
+                }
             }
             
             // Write the processed data to the output file.
@@ -65,9 +66,16 @@ public class SensorDataProcessor {
                 }
                 out.newLine();
             }            
+                    out.write(data2[i][j] + "\t");
+                }
+            }
+
             out.close();
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }
     }
 }
+}
+
+//
