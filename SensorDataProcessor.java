@@ -1,3 +1,7 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class SensorDataProcessor {
     // Sensor data and limits.
     public double[][][] data;
@@ -23,7 +27,7 @@ public class SensorDataProcessor {
     public void calculate(double d) {
         int i, j, k = 0;
         double[][][] data2 = new double[data.length][data[0].length][data[0][0].length];
-        BufferedWriter out;
+        BufferedWriter out = null;
         
         // Write racing stats data into a file.
         try {
