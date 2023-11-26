@@ -10,7 +10,8 @@ Issues Fixed:added more break statments to break out the nested loop and fixed t
   Issues Fixed:added comments to improve readability and correct the mismatch constructor with the class name
 
 Name: Rola Salman Al-Lahibi ID: 2116091
-Issues Fixed: Print the stack trace for exceptions to provide more detailed error information
+Issues Fixed: Print the stack trace for exceptions to provide more detailed error information and 
+Added return type specifier
 
 Name: Bushra Turki Alzhrani ID: 1806542
 Issues Fixed:Change the name of a variable (val)to (sum ) to be clear and meaningful and Added the true parameter to the FileWriter constructor
