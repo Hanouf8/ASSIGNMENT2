@@ -14,13 +14,14 @@ public class SensorDataProcessor {
     }
     
     // Calculates the average of sensor data.
+    // Change the variable Name val to sum to be clear
     private double average(double[] array) {
         int i = 0;
-        double val = 0;
+        double sum = 0;
         for (i = 0; i < array.length; i++) {
-            val += array[i];
+            sum += array[i];
         }
-        return val / array.length;
+        return sum / array.length;
     }
     
     // Calculate data.
@@ -31,7 +32,8 @@ public class SensorDataProcessor {
         
         // Write racing stats data into a file.
         try {
-            out = new BufferedWriter(new FileWriter("RacingStatsData.txt"));
+            //added the true parameter to the FileWriter constructor to enable appending to the file.
+            out = new BufferedWriter(new FileWriter("RacingStatsData.txt",true )); 
             
             for (i = 0; i < data.length; i++) {
                 for (j = 0; j < data[0].length; j++) {
